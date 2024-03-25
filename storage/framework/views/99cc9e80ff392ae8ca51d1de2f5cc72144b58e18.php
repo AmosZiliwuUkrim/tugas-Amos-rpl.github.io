@@ -93,6 +93,7 @@
                                 <th>Gambar Berita</th>
                                 <th>Judul Berita</th>
                                 <th>Kategori Berita</th>
+                                <th>Total Views</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -101,6 +102,7 @@
                                     <td><img src="<?php echo e(route('storage',$row->gambar_berita)); ?>" width="50px" height="50px"></td>
                                     <td><?php echo e(($row->judul_berita)); ?></td>
                                     <td><?php echo e(($row->kategori->nama_kategori)); ?></td>
+                                    <td><?php echo e(($row->total_views)); ?>x</td>
                                 </tr>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </tbody>

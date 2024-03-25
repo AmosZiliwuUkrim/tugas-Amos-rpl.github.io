@@ -94,6 +94,7 @@
                                 <th>Gambar Berita</th>
                                 <th>Judul Berita</th>
                                 <th>Kategori Berita</th>
+                                <th>Total Views</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -102,6 +103,7 @@
                                     <td><img src="{{ route('storage',$row->gambar_berita) }}" width="50px" height="50px"></td>
                                     <td>{{ ($row->judul_berita) }}</td>
                                     <td>{{ ($row->kategori->nama_kategori) }}</td>
+                                    <td>{{ ($row->total_views) }}x</td>
                                 </tr>
                             @endforeach
                             </tbody>
