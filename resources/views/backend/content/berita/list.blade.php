@@ -31,10 +31,10 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @php
-                            $no = 1;
-                        @endphp
-                        @foreach ($berita as $row)
+                            @php
+                                $no = 1;
+                            @endphp
+                            @foreach ($berita as $row)
                             <tr>
                                 <td>{{ $no++ }}</td>
                                 <td><img src="{{ route('storage',$row->gambar_berita) }}" width="50px" height="50px"></td>
@@ -45,7 +45,7 @@
                                     <a href="{{ route('berita.hapus',$row->id_berita) }}" onclick="return confirm('Anda yakin?')" class="btn btn-sm btn-secondary btn-danger"><i class="fa fa-trash"> </i> Hapus</a>
                                 </td>
                             </tr>
-                        @endforeach
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -53,3 +53,4 @@
         </div>
     </div>
 @endsection
+
