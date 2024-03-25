@@ -18,7 +18,7 @@
     @php
         $no = 1;
     @endphp
-    B@foreach ($kategori as $row)
+    @foreach ($kategori as $row)
         <tr>
             <td>{{ $no++ }}</td>
             <td>{{ $row->nama_kategori }}</td>

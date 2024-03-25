@@ -7,7 +7,9 @@
                 <?php echo e(session()->get('pesan')[1]); ?>
 
             </div>
+
         <?php endif; ?>
+
 
         <div class="card shadow mb-4">
             <div class="card-body">

@@ -1,3 +1,4 @@
+<?php $__env->startSection('content'); ?>
 <html>
 <head>
     <title>Data Kategori</title>
@@ -5,7 +6,6 @@
 <body>
 
 <h3>Data Kategori</h3>
-
 <table border="1" width="100%">
     <thead>
     <tr>
@@ -15,7 +15,7 @@
     </thead>
     <tbody>
     <?php
-    $no = 1;
+        $no = 1;
     ?>
     <?php $__currentLoopData = $kategori; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <tr>
@@ -25,7 +25,8 @@
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </tbody>
 </table>
-
 </body>
 </html>
-<?php /**PATH C:\DATA KULIAH AMOS\KUMPULAN DATA MATAKULIAH\Semester 4\RPL\Praktikum\praktikum1_RPL\resources\views/backend/content/kategori/export.blade.php ENDPATH**/ ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('backend/layout/main', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\DATA KULIAH AMOS\KUMPULAN DATA MATAKULIAH\Semester 4\RPL\Praktikum\praktikum1_RPL\resources\views/backend/content/kategori/export.blade.php ENDPATH**/ ?>
